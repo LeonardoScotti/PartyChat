@@ -6,7 +6,7 @@
 
 *Creation*
 
-- create party giving:
+- create party by providing:
    - name
    - location
    - type
@@ -31,7 +31,7 @@
 
 *Search*
 
-You can search filtering by:
+You can filter the search by:
 - type
 - mode
 - location 
@@ -41,7 +41,7 @@ Also using map and with a Hot section with recommended ones.
 
 *Party Mode*
 
-Starting a party you can:
+When creating a party you can:
 - select maximum number of invites
 - ask for food/drink contrinutio
 - divide food/drink cost
