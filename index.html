@@ -1,8 +1,66 @@
-!DOCTYPE html
+<!DOCTYPE html>
 <html>
-<body>
-<header>
-<a></a>
-</header>
-</body>
+    <body>
+        <head>
+            <title>PARTYCHAT</title>
+            <link rel="stylesheet" href="css/style_index.css">
+            <link rel="stylesheet" href="css/top_button.css">
+            <script type="text/javascript" src="js/top_button.js"></script>
+            <script src="https://kit.fontawesome.com/b22bb0a727.js" crossorigin="anonymous"></script>
+        </head>
+        <div class="navbar fixed" id="navbar">
+            <div class="title" id="title">PARTYCHAT</div>
+            <ul id="nav_left">
+                <li class="navbar_btn" id="home"><a id="a1" href="index.html">HOME</a></li>
+                <li class="navbar_btn" id="profile"><a id="a2" href="profile.html">PROFILE</a></li>
+                <li class="navbar_btn" id="search"><a id="a3" href="search.html">SEARCH</a></li>
+                <li class="navbar_btn" id="new"><a id="a4" href="new.html">PARTY</a></li>
+            </ul>
+        </div>
+        <div class="main free" id="main">
+            <div class="banner" id="banner">
+                <img class="banner_img" src="Media/party_banner_v1.jpg"><img class="banner_img" src="Media/party_banner_v2.jpg">
+            </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="footer" id="footer"><div class=""></div>
+                <div class="footer_elem" id="contacts">contacts</div><div class="footer_elem" id="info">infos</div>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="top_button" title="go to top"><strong>&#9650;</strong></button>
+    </body>
+    <script>
+    const mybutton = document.getElementById("top_button");
+    const navbar = document.getElementById("navbar");
+    const title = document.getElementById("title");
+    const a = document.getElementById("nav_left");
+
+    window.onscroll = function(){scrollFunction()};
+
+    function scrollFunction(){
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+            navbar.classList.add("nav_2");
+        }else{
+            mybutton.style.display = "none";
+            navbar.classList.remove("nav_2");
+        }
+    }
+
+    function topFunction(){
+        document.body.scrollTop = 0;    
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
 </html>
