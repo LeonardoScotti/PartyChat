@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <title>PARTYCHAT</title>
+            <title>Profile</title>
+            <link rel="stylesheet" href="css/profile.css">
+            <link rel="stylesheet" href="css/top_button.css">
+            <script type="text/javascript" src="js/top_button.js"></script>
+            <script src="https://kit.fontawesome.com/b22bb0a727.js" crossorigin="anonymous"></script>
+        </head>
+
+        <div class="navbar fixed" id="navbar">
+            <div class="name">
+                <i class="fa-solid fa-party-horn"></i>
+                <div class="title" id="title">PARTYCHAT</div>
+            </div>
+            <ul>
+                <li class="navbar_btn" id="home"><a href="index.html">HOME</a></li>
+                <li class="navbar_btn" id="profile"><a href="profile.html">PROFILE</a></li>
+                <li class="navbar_btn" id="search"><a href="search.html">SEARCH</a></li>
+                <li class="navbar_btn" id="new"><a href="new.html">PARTY</a></li>
+            </ul>
+        </div>
+
+        <div class="main free" id="main">
+
+            <div class="banner" id="banner">
+
+                <div class="banner_background">
+                    <img class="banner_img" id="bp1" src="Media/party_banner_v1.jpg"><img class="banner_img" id="bp2" src="Media/party_banner_v2.jpg">
+                </div>
+
+                <div class="banner_contents">
+
+                <img class="profile_pic" src="Media/profile_pic.jpg">
+
+                    <div class="banner_right">
+                        
+                        <div class="banner_title" id="username">LOREM IPSUM</div>
+
+                        <div class="banner_bio">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu turpis quis justo placerat ornare vitae nec nunc.
+                            Vivamus vehicula posuere eros, at finibus nisi consequat nec. Sed eu consequat lacus.
+                            Praesent massa elit, tristique quis orci vitae, sagittis cursus lorem. Donec ornare luctus congue.
+                            Nam ornare ultricies sem. Nam dignissim id sem ac euismod.
+                            Sed malesuada nisi lectus, non elementum massa mattis eu. In porttitor a ligula ac semper.
+                        </div>
+
+                        <div class="banner_buttons">
+                            <button class="banner_btn" id="settings">Settings</button>
+                            <button class="banner_btn" id="edit">Edit Profile</button>
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+            </div>
+
+            <div class="footer" id="footer"><div class=""></div>
+                <div class="footer_elem" id="contacts">contacts</div><div class="footer_elem" id="info">infos</div>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="top_button" title="go to top"><strong>&#9650;</strong></button>
+    </body>
+    <script>
+    mybutton = document.getElementById("top_button");
+    titolo = document.getElementById("titolo")
+
+    window.onscroll = function(){scrollFunction()};
+
+    function scrollFunction(){
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+            titolo.style.display = "none";
+        }else{
+            mybutton.style.display = "none";
+            titolo.style.display = "block";
+        }
+    }
+
+    function topFunction(){
+        document.body.scrollTop = 0;    
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+</html>

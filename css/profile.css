@@ -1,0 +1,165 @@
+
+
+body{
+    background-color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+  background-color: rgba(255, 15, 183, 0.871);
+  text-shadow: -1px 0 , 0 1px , 1px 0 , 0 -1px ;
+  color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4rem;
+	top: 0;
+  margin: 0;
+  border: none;
+  font-size: 25px;
+  transition: all .2s;
+}
+
+.nav_2{
+  background-color: transparent;
+  color: rgba(255, 15, 183, 1);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  transition: all .2s;
+}
+
+.title{
+  text-shadow: -1px 0 , 0 1px , 1px 0 , 0 -1px ;
+  display: inline-block;
+  border: none;
+  font-size: 28px;
+  margin: 2rem;
+}
+
+.navbar_btn{
+  display: inline-block;
+  margin: 2rem;
+  border: none;
+}
+
+.navbar_btn:hover {
+  transform: scale(1.2);
+  transition: all .2s;
+}
+
+.navbar_btn:not(:hover) {
+  transition: all .2s;
+}
+
+a{
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.banner {
+  top: 0;
+  width: 100%;
+}
+
+.banner_img {
+  width: 50%;
+  height: 32rem;
+}
+
+#bp1{
+    left:0;
+}
+
+#bp2{
+    right: 0;
+}
+
+.banner_background{
+    position: absolute;
+    z-index: -1;
+}
+
+.banner_contents{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 10rem 0 0 2rem;
+}
+
+
+.profile_pic{
+    border-radius: 50%;
+    width: 200px;
+    float: left;
+}
+
+.banner_right{
+    padding-left: 15rem;
+    width: 50rem;
+}
+
+.banner_title{
+    color: rgba(255, 15, 183, 0.871);
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 2rem;
+    font-weight: 800; 
+    padding-bottom: 0.3rem;
+}
+
+.banner_bio{
+    color: white;
+    width: 50rem;
+    background-color: transparent;
+}
+
+.banner_buttons{
+    margin-top: 2rem;
+}
+
+.banner_btn{
+    cursor: pointer;
+    color: white;
+    outline: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(255, 15, 183, 1);
+    border: none;
+    border-radius: 0.2vw;
+}
+
+.banner_btn:hover {
+    color: rgba(255, 15, 183, 1);
+    background-color: white;
+    transition: all 0.2s;
+}
+
+.banner_btn:not(:hover) {
+    color: white;
+    background-color: rgba(255, 15, 183, 1);
+    transition: all 0.2s;
+}
+
+
+.footer {
+    position:absolute;
+    color: white;
+    background-color:rgba(255, 15, 183, 0.562);
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center; 
+    height: 7rem;
+    align-items: center;
+}
+
+.footer_elem {
+    font-size: 25px;
+}
