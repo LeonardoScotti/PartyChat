@@ -1,0 +1,17 @@
+
+.footer {
+
+    color: white;
+    background-color:rgba(255, 15, 183, 0.562);
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center; 
+    height: 7rem;
+    align-items: center;
+}
+
+.footer_elem {
+    font-size: 25px;
+}

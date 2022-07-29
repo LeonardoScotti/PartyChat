@@ -1,0 +1,37 @@
+
+
+.highlight_party{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 2rem;
+    border: none;
+}
+
+.highlight_party:hover{
+    cursor: pointer;
+}
+
+.party_pic{
+    width: 125px;
+    height: 125px;
+    border-radius: 20%;
+    float: left;
+    margin: 3rem;
+}
+
+.highlight_party_right{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    width: 55rem;
+}
+
+.highlight_party_title{
+    color: rgba(255, 15, 183, 0.871);
+    font-size: 2rem;
+    font-weight: 800; 
+}
+
+.highlight_party_description{
+    width: 55rem;
+}

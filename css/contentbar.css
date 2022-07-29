@@ -1,0 +1,61 @@
+
+.content{
+    margin-top: 11rem;
+}
+
+
+
+.contentbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.contentbar_btn{
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.contentbar_btn2{
+    color: rgba(255, 15, 183, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.contentbar_btn2:hover {
+    cursor: pointer;
+    transform: scale(1.4);
+    transition: all .2s;
+}
+
+.contentbar_btn2:not(:hover) {
+    transform: scale(1);
+    transition: all .2s;
+}
+
+.contentbar_btn2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgba(255, 15, 183, 1);
+    transition: width 0.25s ease-out;
+}
+
+.contentbar_btn2:hover::after{
+    width: ;
+    left: 0;
+    right: auto;
+}
+

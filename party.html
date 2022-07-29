@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <title>PARTYCHAT</title>
+            <link rel="stylesheet" href="css/navbar.css">
+            <link rel="stylesheet" href="css/banner.css">
+            <link rel="stylesheet" href="css/contentbar.css">
+            <link rel="stylesheet" href="css/highlight_party.css">
+            <link rel="stylesheet" href="css/top_button.css">
+            <link rel="stylesheet" href="css/footer.css">
+            <link rel="stylesheet" href="css/scrollbar.css">
+            <script type="text/javascript" src="js/top_button.js"></script>
+            <script src="https://kit.fontawesome.com/b22bb0a727.js" crossorigin="anonymous"></script>
+        </head>
+
+        <div class="navbar fixed" id="navbar">
+            <div class="name">
+                <i class="fa-solid fa-party-horn"></i>
+                <div class="title" id="title">PARTYCHAT</div>
+            </div>
+            <ul>
+                <li class="navbar_btn" id="home"><a href="index.html">HOME</a></li>
+                <li class="navbar_btn" id="profile"><a href="profile.html">PROFILE</a></li>
+                <li class="navbar_btn" id="search"><a href="search.html">SEARCH</a></li>
+                <li class="navbar_btn" id="new"><a href="new.html">PARTY</a></li>
+            </ul>
+        </div>
+
+        <div class="main free" id="main">
+
+            <div class="banner" id="banner">
+
+                <div class="banner_background">
+                    <img class="banner_img" id="bp1" src="Media/party_banner_v1.jpg"><img class="banner_img" id="bp2" src="Media/party_banner_v2.jpg">
+                </div>
+
+                <div class="banner_contents">
+
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.9718182406446!2d9.962878615382172!3d44.10457347910843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d50339dc91c4c7%3A0xeb3696b7e2076197!2sJux%20Tap!5e0!3m2!1sit!2sit!4v1658750934039!5m2!1sit!2sit"
+                    class="location_pic"
+                    >
+                    </iframe>
+                    
+                    <div class="banner_right">
+                        
+                        <div class="banner_title" id="username">
+                            LOREM IPSUM
+                        </div>
+                        
+                        <div class="banner_bio">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu turpis quis justo placerat ornare vitae nec nunc.
+                            Vivamus vehicula posuere eros, at finibus nisi consequat nec. Sed eu consequat lacus.
+                            Praesent massa elit, tristique quis orci vitae, sagittis cursus lorem. Donec ornare luctus congue.
+                            Nam ornare ultricies sem. Nam dignissim id sem ac euismod.
+                            Sed malesuada nisi lectus, non elementum massa mattis eu. In porttitor a ligula ac semper.
+                        </div>
+
+                        <div class="banner_buttons">
+                            <button class="banner_btn" id="join">Join</button>
+                            <button class="banner_btn" id="edit">Edit</button>
+                            <button class="banner_btn" id="edit">Delete</button> 
+                        </div>
+
+
+    
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="content">
+                <div class="contentbar" id="contentbar">
+                    <ul>
+                        <li class="contentbar_btn"><button class="contentbar_btn2" id="comments">Comments</button></li>
+                        <li class="contentbar_btn"><button class="contentbar_btn2" id="invitations">Invitations</button></li>
+                        <li class="contentbar_btn"><button class="contentbar_btn2" id="gallery">Gallery</button></li>
+                        <li class="contentbar_btn"><button class="contentbar_btn2" id="playlist">Playlist</button></li>
+                        <li class="contentbar_btn"><button class="contentbar_btn2" id="food">Food and Drink</button></li>
+
+                    </ul>
+                </div>
+
+                <div id="playlist">
+                    <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8FwnYE6PRvL?utm_source=generator&theme=0"
+                    width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;
+                    encrypted-media;"></iframe>
+                </div>
+
+            </div>
+
+            <div class="footer" id="footer"><div class=""></div>
+                <div class="footer_elem" id="contacts">contacts</div><div class="footer_elem" id="info">infos</div>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="top_button" title="go to top"><strong>&#9650;</strong></button>
+    </body>
+    <script>
+    mybutton = document.getElementById("top_button");
+    titolo = document.getElementById("titolo")
+
+    window.onscroll = function(){scrollFunction()};
+
+    function scrollFunction(){
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+            titolo.style.display = "none";
+        }else{
+            mybutton.style.display = "none";
+            titolo.style.display = "block";
+        }
+    }
+
+    function topFunction(){
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+    </script>
+</html>

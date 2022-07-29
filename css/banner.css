@@ -1,0 +1,97 @@
+
+.banner {
+    top: 0;
+    width: 100%;
+}
+
+.banner_img {
+    width: 50%;
+    height: 32rem;
+}
+
+#bp1{
+    left:0;
+}
+
+#bp2{
+    right: 0;
+}
+
+.banner_background{
+    position: absolute;
+    z-index: -1;
+}
+
+.banner_contents{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: rem;
+    padding: 10rem 0 0 2rem;
+}
+
+
+.profile_pic{
+    border-radius: 50%;
+    width: 200px;
+    float: left;
+}
+
+.location_pic{
+    border-radius: 20%;
+    float: left;
+    width: 200px;
+    height: 200px;
+    border: 0;
+}
+
+.banner_right{
+    padding-left: 15rem;
+    width: 50rem;
+}
+
+.banner_title{
+    color: rgba(255, 15, 183, 0.871);
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 2rem;
+    font-weight: 800; 
+    padding-bottom: 0.3rem;
+}
+
+.banner_bio{
+    color: white;
+    width: 50rem;
+    background-color: transparent;
+}
+
+.banner_buttons{
+    margin-top: 2rem;
+}
+
+.banner_btn{
+    cursor: pointer;
+    color: white;
+    outline: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(255, 15, 183, 1);
+    border: none;
+    border-radius: 0.2vw;
+}
+
+.banner_btn:hover {
+    color: rgba(255, 15, 183, 1);
+    background-color: white;
+    transition: all 0.2s;
+}
+
+.banner_btn:not(:hover) {
+    color: white;
+    background-color: rgba(255, 15, 183, 1);
+    transition: all 0.2s;
+}
